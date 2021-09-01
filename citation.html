@@ -268,15 +268,44 @@ Citation in Rmarkdown file demonstration
 Wyclife Agumba Oluoch (<a href="mailto:wyclifeoluoch@gmail.com" class="email">wyclifeoluoch@gmail.com</a>)
 </center></h4>
 <h4 class="date"><center>
-2021-08-31 09:37:41
+2021-09-01 19:33:32
 </center></h4>
 
 </div>
 
 
+<pre class="r"><code># Package names to be cited in the markdown file
+packages &lt;- c(&#39;tidyverse&#39;,
+              &#39;here&#39;,
+              &#39;knitr&#39;,
+              &#39;rmarkdown&#39;,
+              &#39;todor&#39;,
+              &#39;lintr&#39;,
+              &#39;DT&#39;,
+              &#39;kableExtra&#39;,
+              &#39;roxygen2&#39;,
+              &#39;testthat&#39;,
+              &#39;usethis&#39;,
+              &#39;devtools&#39;,
+              &#39;tinytex&#39;
+              )
+# Install packages not already installed but are in the list
+installed_packages &lt;- packages %in% rownames(installed.packages())
+if (any(installed_packages == FALSE)){
+  install.packages(packages[!installed_packages])
+}
+
+# Loading all the packages to be used
+lapply(packages, library, character.only = TRUE) |&gt;
+  invisible()</code></pre>
+<pre class="r"><code># Create a bib for R packages
+knitr::write_bib(c(
+  .packages(), packages
+), &#39;bib/packages.bib&#39;)</code></pre>
 <div id="introduction" class="section level1">
 <h1>Introduction</h1>
-<p>In this short article, I demonstrate how to cite R packages and other sources of literature within Rmarkdown file in R <span class="citation">(R Core Team 2021)</span>. Some of the packages include <code>tidyverse</code> version 1.3.1 <span class="citation">(Wickham 2021d)</span>. On the other hand, I also used citations which are not necessary packages <span class="citation">(<em>sensu</em> Naimi and Araújo 2016, 3; Naimi et al. 2014)</span>. On the same note, Naimi <span class="citation">(2016)</span> suggested that predictor variables should be scaled to enable interpretation of variable importance values. <span class="citation">Soberón and Peterson (2004, 25)</span> had seen similar patterns earlier.</p>
+<p>I demonstrate how to cite R packages and other sources of literature within Rmarkdown file in R <span class="citation">(R Core Team 2021)</span>. Some of the packages include <code>tidyverse</code> version 1.3.1 <span class="citation">(Wickham 2021d)</span>. On the other hand, I also used citations which are not necessary packages <span class="citation">(<em>sensu</em> Naimi and Araújo 2016, 3; Naimi et al. 2014)</span>. On the same note, Naimi <span class="citation">(2016)</span> suggested that predictor variables should be scaled to enable interpretation of variable importance values. <span class="citation">Soberón and Peterson (2004, 25)</span> had seen similar patterns earlier.</p>
+<p>You can access the codes for .Rmd and other files on my <a href="https://github.com/Wycology/citation">gitHub</a> repository.</p>
 </div>
 <div id="references" class="section level1 unnumbered">
 <h1 class="unnumbered">References</h1>
@@ -362,8 +391,14 @@ Xie, Yihui. 2014. <span>“Knitr: A Comprehensive Tool for Reproducible Research
 <div id="ref-knitr2015" class="csl-entry">
 ———. 2015. <em>Dynamic Documents with <span>R</span> and Knitr</em>. 2nd ed. Boca Raton, Florida: Chapman; Hall/CRC. <a href="https://yihui.org/knitr/">https://yihui.org/knitr/</a>.
 </div>
+<div id="ref-tinytex2019" class="csl-entry">
+———. 2019. <span>“TinyTeX: A Lightweight, Cross-Platform, and Easy-to-Maintain LaTeX Distribution Based on TeX Live.”</span> <em>TUGboat</em>, no. 1: 30–32. <a href="http://tug.org/TUGboat/Contents/contents40-1.html">http://tug.org/TUGboat/Contents/contents40-1.html</a>.
+</div>
 <div id="ref-R-knitr" class="csl-entry">
-———. 2021. <em>Knitr: A General-Purpose Package for Dynamic Report Generation in r</em>. <a href="https://yihui.org/knitr/">https://yihui.org/knitr/</a>.
+———. 2021a. <em>Knitr: A General-Purpose Package for Dynamic Report Generation in r</em>. <a href="https://yihui.org/knitr/">https://yihui.org/knitr/</a>.
+</div>
+<div id="ref-R-tinytex" class="csl-entry">
+———. 2021b. <em>Tinytex: Helper Functions to Install and Maintain TeX Live, and Compile LaTeX Documents</em>. <a href="https://github.com/yihui/tinytex">https://github.com/yihui/tinytex</a>.
 </div>
 <div id="ref-rmarkdown2018" class="csl-entry">
 Xie, Yihui, J. J. Allaire, and Garrett Grolemund. 2018. <em>R Markdown: The Definitive Guide</em>. Boca Raton, Florida: Chapman; Hall/CRC. <a href="https://bookdown.org/yihui/rmarkdown">https://bookdown.org/yihui/rmarkdown</a>.
