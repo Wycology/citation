@@ -4,6 +4,7 @@ author: "<center>By: Wyclife Agumba Oluoch (wyclifeoluoch@gmail.com)</center>"
 date: "<center>`r Sys.time()`</center>"
 bibliography: [bib/cited.bib, bib/packages.bib]
 # cited.bib is created separately using any plain text editor like notepad or sublime text
+link-citations: yes
 nocite: '@*'
 output: 
   html_document:
@@ -12,7 +13,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, cache = T)
 ```
 
 ```{r libs, message = FALSE}
