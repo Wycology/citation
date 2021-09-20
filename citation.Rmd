@@ -3,7 +3,7 @@ title: "<center>Citation in Rmarkdown file demonstration</center>"
 author: "<center>By: Wyclife Agumba Oluoch (wyclifeoluoch@gmail.com)</center>"
 date: "<center>`r Sys.time()`</center>"
 bibliography: [bib/cited.bib, bib/packages.bib]
-# cited.bib is created separately using any plain text editor like notepad or subli
+# cited.bib is created separately using any plain text editor like notepad or 
 link-citations: yes
 nocite: '@*'
 output: 
