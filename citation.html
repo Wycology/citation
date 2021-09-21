@@ -268,36 +268,12 @@ Citation in Rmarkdown file demonstration
 By: Wyclife Agumba Oluoch (<a href="mailto:wyclifeoluoch@gmail.com" class="email">wyclifeoluoch@gmail.com</a>)
 </center></h4>
 <h4 class="date"><center>
-2021-09-19 16:09:43
+2021-09-20 18:30:18
 </center></h4>
 
 </div>
 
 
-<pre class="r"><code># Package names to be cited in the markdown file
-packages &lt;- c(&#39;tidyverse&#39;,
-              &#39;here&#39;,
-              &#39;knitr&#39;,
-              &#39;rmarkdown&#39;,
-              &#39;todor&#39;,
-              &#39;lintr&#39;,
-              &#39;DT&#39;,
-              &#39;kableExtra&#39;,
-              &#39;roxygen2&#39;,
-              &#39;testthat&#39;,
-              &#39;usethis&#39;,
-              &#39;devtools&#39;,
-              &#39;tinytex&#39;
-              )
-# Install packages not already installed but are in the list
-installed_packages &lt;- packages %in% rownames(installed.packages())
-if (any(installed_packages == FALSE)){
-  install.packages(packages[!installed_packages])
-}
-
-# Loading all the packages to be used
-lapply(packages, library, character.only = TRUE) |&gt;
-  invisible()</code></pre>
 <pre class="r"><code># Create a bib for R packages
 knitr::write_bib(c(
   .packages(), packages
