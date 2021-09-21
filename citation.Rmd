@@ -3,7 +3,7 @@ title: "<center>Citation in Rmarkdown file demonstration</center>"
 author: "<center>By: Wyclife Agumba Oluoch (wyclifeoluoch@gmail.com)</center>"
 date: "<center>`r Sys.time()`</center>"
 bibliography: [bib/cited.bib, bib/packages.bib]
-# cited.bib is created as R script but saved as .bib file
+# cited.bib is created as R script but saved as .bib fi
 link-citations: yes
 nocite: '@*'
 output: 
@@ -16,12 +16,13 @@ output:
 knitr::opts_chunk$set(echo = TRUE, cache = T)
 ```
 
-```{r libs, message = FALSE}
+```{r libs, echo = F, warning = F, include = F, message = FALSE}
 # Package names to be cited in the markdown file
-packages <- c('tidyverse',
-              'here',
+packages <- c('base',
               'knitr',
               'rmarkdown',
+              'tidyverse',
+              'here',
               'todor',
               'lintr',
               'DT',
@@ -39,16 +40,16 @@ if (any(installed_packages == FALSE)){
 }
 
 # Loading all the packages to be used
-lapply(packages, library, character.only = TRUE) |>
-  invisible()
+lapply(packages, library, character.only = TRUE) |> invisible()
 ```
 
-```{r write_bib}
+```{r write_bib, echo = F, warning = F, include = F, message = F}
 # Create a bib for R packages
 knitr::write_bib(c(
   .packages(), packages
 ), 'bib/packages.bib')
 ```
+
 # Introduction
 
 I demonstrate how to cite R packages and other sources of literature within Rmarkdown file in R [@R-base]. Some of the packages include `tidyverse` version `r packageVersion('tidyverse')` [@R-tidyverse]. On the other hand, I also used citations which are not necessary packages [_sensu_ @naimi2016sdm, pp.3; @naimi2014positional]. On the same note, Naimi [-@naimi2016sdm] suggested that predictor variables should be scaled to enable interpretation of variable importance values. @soberon2004biodiversity [pp. 25] had seen similar patterns earlier.
