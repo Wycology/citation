@@ -32,7 +32,7 @@ packages <- c('base',
               'devtools',
               'tinytex'
               )
-# Install packages not already installed
+# Install packages not already
 installed_packages <- packages %in% rownames(installed.packages())
 if (any(installed_packages == FALSE)){
   install.packages(packages[!installed_packages])
