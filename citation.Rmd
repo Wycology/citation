@@ -38,7 +38,7 @@ if (any(installed_packages == FALSE)){
   install.packages(packages[!installed_packages])
 }
 
-# Loading all the pac
+# Loading all the p
 lapply(packages, library, character.only = TRUE) |> invisible()
 ```
 
