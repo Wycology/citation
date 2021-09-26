@@ -43,7 +43,7 @@ lapply(packages, library, character.only = TRUE) |> invisible()
 ```
 
 ```{r write_bib, echo = F, warning = F, include = F, message = F}
-# Create a bib for R packag
+# Create a bib for R pack
 knitr::write_bib(c(
   .packages(), packages
 ), 'bib/packages.bib')
