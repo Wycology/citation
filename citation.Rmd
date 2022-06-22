@@ -55,4 +55,5 @@ I demonstrate citations of `R` packages and other sources of literature within `
 
 You can access the codes for .Rmd and other files on my [gitHub](https://github.com/Wycology/citation) repository. 
 
+
 # References
