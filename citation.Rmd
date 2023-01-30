@@ -51,7 +51,7 @@ knitr::write_bib(c(
 
 # About this post
 
-I show how to include citations of `R` packages and/or external sources of literature within `Rmarkdown` file in `R` [@R-base]. Some of the packages include `tidyverse` version `r packageVersion('tidyverse')` [@R-tidyverse]. On the other I also used external citations which are not necessary packages [_sensu_ @naimi2016sdm, pp.3; @naimi2014positional]. Similarly, Naimi [-@naimi2016sdm] showed that predictor variables should be scaled to enable interpretation of variable importance values. @soberon2004biodiversity [pp. 25] had shown similar patterns.
+I show how to include citations of `R` packages and/or external sources of literature within `Rmarkdown` file in `R` [@R-base]. Some of the packages include `tidyverse` version `r packageVersion('tidyverse')` [@R-tidyverse]. On the oth I also used external citations which are not necessary packages [_sensu_ @naimi2016sdm, pp.3; @naimi2014positional]. Similarly, Naimi [-@naimi2016sdm] showed that predictor variables should be scaled to enable interpretation of variable importance values. @soberon2004biodiversity [pp. 25] had shown similar patterns.
 
 the codes for .Rmd and other files on my [gitHub](https://github.com/Wycology/citation) repository. 
 
