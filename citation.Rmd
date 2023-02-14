@@ -23,8 +23,7 @@ packages <- c('base', 'knitr',
               'lintr', 'DT',
               'kableExtra', 'roxygen2',
               'testthat', 'usethis',
-              'devtools',
-              'tinytex'
+              'devtools', 'tinytex'
               )
 
 installed_packages <- packages %in% rownames(installed.packages())
