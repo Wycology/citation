@@ -17,9 +17,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r libs, echo = F, warning = F, include = F, message = FALSE}
 
-packages <- c('base', 'knitr',
-              'rmarkdown', 'tidyverse',
-              'here', 'todor', 'lintr', 'DT',
+packages <- c('base', 'knitr', 'rmarkdown', 
+              'tidyverse', 'here', 'todor', 
+              'lintr', 'DT',
               'kableExtra', 'roxygen2',
               'testthat', 'usethis',
               'devtools', 'tinytex'
