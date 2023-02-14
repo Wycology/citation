@@ -19,8 +19,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 packages <- c('base', 'knitr',
               'rmarkdown', 'tidyverse',
-              'here',
-              'todor',
+              'here', 'todor',
               'lintr',
               'DT',
               'kableExtra',
