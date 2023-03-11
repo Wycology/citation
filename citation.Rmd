@@ -1,5 +1,5 @@
 ---
-title: "Citation in Rmarkdown file</cen"
+title: "Citation in Rmarkdown file</"
 author: "<center>By: Wyclife Agumba Oluoch (wyclifeoluoch@gmail.com)</center>"
 date: "<center>`r Sys.time()`</center>"
 bibliography: [bib/cited.bib, bib/packages.bib]
