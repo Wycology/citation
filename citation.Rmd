@@ -32,7 +32,8 @@ if (any(installed_packages == FALSE)){
 # Loading libraries
 lapply(packages, 
        library, 
-       character.only = TRUE) |> invisible()
+       character.only = TRUE) |> 
+  invisible()
 ```
 
 ```{r write_bib, echo = F, warning = F, include = F, message = F}
