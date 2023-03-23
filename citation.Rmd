@@ -1,7 +1,7 @@
 ---
 title: "Citation in Rmarkdown file"
 author: "By: Wyclife Agumba Oluoch (wyclifeoluoch@gmail.com)"
-date: "<cent`r Sys.time()`"
+date: "<cen`r Sys.time()`"
 bibliography: [bib/cited.bib, bib/packages.bib]
 link-citations: yes
 nocite: '@*'
