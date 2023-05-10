@@ -43,7 +43,7 @@ knitr::write_bib(c(
 ), 'bib/packages.bib')
 ```
 
-# About this 
+# About this
 
 In this short article, I demonstrate how to include citations of `R` packages and any other external sources of literature within an `Rmarkdown` file in `R` [@R-base]. Some of the packages include `tidyverse` version `r packageVersion('tidyverse')` [@R-tidyverse]. I also included external citations which are not packages [_sensu_ @naimi2016sdm, pp.3; @naimi2014positional]. Similarly, Naimi [-@naimi2016sdm] showed that predictor variables should be scaled to ease interpretation of the variable importance values. @soberon2004biodiversity [pp. 25] had shown similar patterns in their earlier study.
 
