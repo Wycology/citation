@@ -49,7 +49,7 @@ In this short article, I demonstrate how to include citations of `R` packages an
 
 Additional important literature for `sdm` include those of [@zurell2020standard]. This is relevant especially for the reproducibility of the `sdm` or `enm` process. Zurell [-@zurell2020standard] showed that `enm` process can be done in a manner that allows for reproducibility. The work on citing biodiversity occurrence data is also well articulated [@owens2021occcite]. Owens and Rahbeck [-@owens2023volumodel] have also brought in interesting aspects of modeling into third dimension especially for marine species. These works are making handling modern `sdm` more interesting and creating new opportunities for furthering research.
 
-There is a new package which is called `grateful` which is easing the task of citing base `R` packages. I will give it a try.
+There is a new package which is called `grateful` which is easing the task of citing base `R` packages. I will give it a try some day.
 
 The R codes for .Rmd and other files on my [gitHub](https://github.com/Wycology/citation) repository. 
 
