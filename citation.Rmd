@@ -51,6 +51,6 @@ Additional important literature for `sdm` include the works of [@zurell2020stand
 
 There is also a new package which is called `grateful` which is easing the task of citing base `R` packages. I will give it a try some day later.
 
-The R codes for the .Rmd and other assfiles on my [gitHub](https://github.com/Wycology/citation) repository. 
+The R codes for the .Rmd and other ass files on my [gitHub](https://github.com/Wycology/citation) repository. 
 
 # References
